@@ -1,0 +1,420 @@
+[info] Loading global plugins from C:\Users\Jerry Kurian\.sbt\0.13\plugins
+[info] Loading project definition from F:\learnym\training\scala\spray\my-project\project
+[info] Set current project to my-project (in build file:/F:/learnym/training/scala/spray/my-project/)
+> reStart
+[info] Compiling 2 Scala sources to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Application my-project not yet started
+[info] Starting application my-project in the background ...
+my-project Starting com.app.Boot.main()
+[success] Total time: 11 s, completed 13 May, 2017 8:12:40 PM
+> my-project [INFO] [05/13/2017 20:12:49.092] [app-system-akka.actor.default-dispatcher-3] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called GET Node
+my-project [ERROR] [05/13/2017 20:13:02.464] [app-system-akka.actor.default-dispatcher-3] [akka://app-system/user/app-service] Error during processing of request HttpRequest(GET,http://localhost:8080/node,List(Host: localhost:8080, Content-Type: application/json),Empty,HTTP/1.1)
+my-project java.lang.ClassCastException: java.util.ArrayList cannot be cast to scala.collection.immutable.List
+my-project 	at com.app.repository.jpa.JpaNodeRepository.findAll(JpaNodeRepository.scala:20)
+my-project 	at com.app.services.NodeService$$anonfun$1.apply(NodeService.scala:19)
+my-project 	at com.app.services.NodeService$$anonfun$1.apply(NodeService.scala:17)
+my-project 	at spray.routing.directives.RouteDirectives$$anonfun$complete$1$$anon$3.apply(RouteDirectives.scala:49)
+my-project 	at spray.routing.directives.RouteDirectives$$anonfun$complete$1$$anon$3.apply(RouteDirectives.scala:48)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$5.apply(RouteDirectives.scala:63)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$5.apply(RouteDirectives.scala:62)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.ExecutionDirectives$$anonfun$handleExceptions$1$$anonfun$apply$4.apply(ExecutionDirectives.scala:35)
+my-project 	at spray.routing.directives.ExecutionDirectives$$anonfun$handleExceptions$1$$anonfun$apply$4.apply(ExecutionDirectives.scala:33)
+my-project 	at spray.routing.HttpServiceBase$class.runSealedRoute$1(HttpService.scala:36)
+my-project 	at spray.routing.HttpServiceBase$$anonfun$runRoute$1.applyOrElse(HttpService.scala:46)
+my-project 	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+my-project 	at com.app.modules.AppService.aroundReceive(AppService.scala:12)
+my-project 	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+my-project 	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+my-project 	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254)
+my-project 	at akka.dispatch.Mailbox.run(Mailbox.scala:221)
+my-project 	at akka.dispatch.Mailbox.exec(Mailbox.scala:231)
+my-project 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+my-project 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+my-project 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+my-project 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+my-project 
+reStart
+[info] Compiling 2 Scala sources to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Stopping application my-project (by killing the forked JVM) ...
+[info] Starting application my-project in the background ...
+my-project Starting com.app.Boot.main()
+my-project ... finished with exit code 1
+[success] Total time: 3 s, completed 13 May, 2017 8:18:30 PM
+> my-project [INFO] [05/13/2017 20:18:38.463] [app-system-akka.actor.default-dispatcher-4] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called GET Node
+my-project Called GET Node
+my-project Called POST Node
+my-project Called GET Node
+my-project Called GET Node
+my-project Called POST Node
+
+> reStart
+[info] Compiling 1 Scala source to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Stopping application my-project (by killing the forked JVM) ...
+[info] Starting application my-project in the background ...
+my-project ... finished with exit code 1
+my-project Starting com.app.Boot.main()
+[success] Total time: 11 s, completed 13 May, 2017 8:22:50 PM
+> my-project [INFO] [05/13/2017 20:22:58.620] [app-system-akka.actor.default-dispatcher-3] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called POST cycle
+my-project Called GET cycle
+reStartreStart
+[error] Not a valid command: reStartreStart
+[error] Not a valid project ID: reStartreStart
+[error] Expected ':' (if selecting a configuration)
+[error] Not a valid key: reStartreStart (similar: reStart, reStartArgs, startYear)
+[error] reStartreStart
+[error]               ^
+> reStartreStart
+[error] Not a valid command: reStartreStart
+[error] Not a valid project ID: reStartreStart
+[error] Expected ':' (if selecting a configuration)
+[error] Not a valid key: reStartreStart (similar: reStart, reStartArgs, startYear)
+[error] reStartreStart
+[error]               ^
+> reStart
+[info] Stopping application my-project (by killing the forked JVM) ...
+[info] Starting application my-project in the background ...
+my-project ... finished with exit code 1
+my-project Starting com.app.Boot.main()
+[success] Total time: 1 s, completed 13 May, 2017 8:31:09 PM
+> my-project [INFO] [05/13/2017 20:31:18.169] [app-system-akka.actor.default-dispatcher-4] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called GET cycle
+my-project Hibernate: select cycle0_.id as id0_, cycle0_.number as number0_ from Cycle cycle0_
+my-project Called POST cycle
+reStart
+[info] Compiling 2 Scala sources to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Stopping application my-project (by killing the forked JVM) ...
+my-project ... finished with exit code 1
+[info] Starting application my-project in the background ...
+my-project Starting com.app.Boot.main()
+[success] Total time: 3 s, completed 13 May, 2017 8:35:12 PM
+> my-project [INFO] [05/13/2017 20:35:20.534] [app-system-akka.actor.default-dispatcher-4] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called POST cycle
+reStart
+[info] Compiling 1 Scala source to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Stopping application my-project (by killing the forked JVM) ...
+[info] Starting application my-project in the background ...
+my-project ... finished with exit code 1
+my-project Starting com.app.Boot.main()
+[success] Total time: 3 s, completed 13 May, 2017 8:36:48 PM
+> my-project [INFO] [05/13/2017 20:36:57.029] [app-system-akka.actor.default-dispatcher-2] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called POST cycle
+my-project Saving using org.hibernate.ejb.EntityManagerImpl@59d93447
+my-project Called GET cycle
+my-project Hibernate: select cycle0_.id as id0_, cycle0_.number as number0_ from Cycle cycle0_
+my-project Called POST cycle
+my-project Saving using org.hibernate.ejb.EntityManagerImpl@59d93447
+reStart
+[info] Compiling 1 Scala source to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Stopping application my-project (by killing the forked JVM) ...
+my-project ... finished with exit code 1
+[info] Starting application my-project in the background ...
+my-project Starting com.app.Boot.main()
+[success] Total time: 2 s, completed 13 May, 2017 8:41:09 PM
+> my-project [INFO] [05/13/2017 20:41:17.186] [app-system-akka.actor.default-dispatcher-4] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called POST cycle
+my-project Saving using org.hibernate.ejb.EntityManagerImpl@6202d679
+my-project [ERROR] [05/13/2017 20:41:31.577] [app-system-akka.actor.default-dispatcher-4] [akka://app-system/user/app-service] Error during processing of request HttpRequest(POST,http://localhost:8080/cycle,List(Host: localhost:8080, Content-Length: 37, Content-Type: application/json),HttpEntity(application/json,{
+my-project "id": 0,
+my-project "number": "321321312"
+my-project }),HTTP/1.1)
+my-project javax.persistence.TransactionRequiredException: no transaction is in progress
+my-project 	at org.hibernate.ejb.AbstractEntityManagerImpl.flush(AbstractEntityManagerImpl.java:789)
+my-project 	at com.app.repository.jpa.JpaCycleRepository.save(JpaCycleRepository.scala:20)
+my-project 	at com.google.inject.persist.jpa.JpaLocalTxnInterceptor.invoke(JpaLocalTxnInterceptor.java:66)
+my-project 	at com.app.services.CycleService$$anonfun$3$$anonfun$apply$2.apply(CycleService.scala:42)
+my-project 	at com.app.services.CycleService$$anonfun$3$$anonfun$apply$2.apply(CycleService.scala:40)
+my-project 	at spray.routing.directives.RouteDirectives$$anonfun$complete$1$$anon$3.apply(RouteDirectives.scala:49)
+my-project 	at spray.routing.directives.RouteDirectives$$anonfun$complete$1$$anon$3.apply(RouteDirectives.scala:48)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$5.apply(RouteDirectives.scala:63)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$5.apply(RouteDirectives.scala:62)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.ExecutionDirectives$$anonfun$handleExceptions$1$$anonfun$apply$4.apply(ExecutionDirectives.scala:35)
+my-project 	at spray.routing.directives.ExecutionDirectives$$anonfun$handleExceptions$1$$anonfun$apply$4.apply(ExecutionDirectives.scala:33)
+my-project 	at spray.routing.HttpServiceBase$class.runSealedRoute$1(HttpService.scala:36)
+my-project 	at spray.routing.HttpServiceBase$$anonfun$runRoute$1.applyOrElse(HttpService.scala:46)
+my-project 	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+my-project 	at com.app.modules.AppService.aroundReceive(AppService.scala:12)
+my-project 	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+my-project 	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+my-project 	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254)
+my-project 	at akka.dispatch.Mailbox.run(Mailbox.scala:221)
+my-project 	at akka.dispatch.Mailbox.exec(Mailbox.scala:231)
+my-project 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+my-project 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+my-project 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+my-project 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+my-project 
+reStart
+[info] Compiling 1 Scala source to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Stopping application my-project (by killing the forked JVM) ...
+[info] Starting application my-project in the background ...
+my-project ... finished with exit code 1
+my-project Starting com.app.Boot.main()
+[success] Total time: 2 s, completed 13 May, 2017 8:42:11 PM
+> my-project [INFO] [05/13/2017 20:42:19.813] [app-system-akka.actor.default-dispatcher-4] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called POST cycle
+my-project Saving using org.hibernate.ejb.EntityManagerImpl@73e54bd2
+my-project [ERROR] [05/13/2017 20:42:31.589] [app-system-akka.actor.default-dispatcher-4] [akka://app-system/user/app-service] Error during processing of request HttpRequest(POST,http://localhost:8080/cycle,List(Host: localhost:8080, Content-Length: 37, Content-Type: application/json),HttpEntity(application/json,{
+my-project "id": 0,
+my-project "number": "321321312"
+my-project }),HTTP/1.1)
+my-project javax.persistence.TransactionRequiredException: no transaction is in progress
+my-project 	at org.hibernate.ejb.AbstractEntityManagerImpl.flush(AbstractEntityManagerImpl.java:789)
+my-project 	at com.app.repository.jpa.JpaCycleRepository.save(JpaCycleRepository.scala:19)
+my-project 	at com.app.services.CycleService$$anonfun$3$$anonfun$apply$2.apply(CycleService.scala:42)
+my-project 	at com.app.services.CycleService$$anonfun$3$$anonfun$apply$2.apply(CycleService.scala:40)
+my-project 	at spray.routing.directives.RouteDirectives$$anonfun$complete$1$$anon$3.apply(RouteDirectives.scala:49)
+my-project 	at spray.routing.directives.RouteDirectives$$anonfun$complete$1$$anon$3.apply(RouteDirectives.scala:48)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$5.apply(RouteDirectives.scala:63)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$5.apply(RouteDirectives.scala:62)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext$$anon$3.handle(RequestContext.scala:102)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:32)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1$$anonfun$apply$1.apply(RouteConcatenation.scala:31)
+my-project 	at spray.routing.RequestContext$$anonfun$withRejectionHandling$1.applyOrElse(RequestContext.scala:130)
+my-project 	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+my-project 	at spray.routing.RequestContext$$anon$1.handle(RequestContext.scala:84)
+my-project 	at akka.spray.UnregisteredActorRefBase.$bang(UnregisteredActorRefBase.scala:72)
+my-project 	at spray.routing.RequestContext.reject(RequestContext.scala:202)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:35)
+my-project 	at spray.routing.directives.RouteDirectives$$anon$1.apply(RouteDirectives.scala:34)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.directives.BasicDirectives$$anon$3$$anonfun$happly$1.apply(BasicDirectives.scala:92)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:30)
+my-project 	at spray.routing.RouteConcatenation$RouteConcatenation$$anonfun$$tilde$1.apply(RouteConcatenation.scala:29)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.BasicDirectives$$anonfun$mapRequestContext$1$$anonfun$apply$1.apply(BasicDirectives.scala:30)
+my-project 	at spray.routing.directives.ExecutionDirectives$$anonfun$handleExceptions$1$$anonfun$apply$4.apply(ExecutionDirectives.scala:35)
+my-project 	at spray.routing.directives.ExecutionDirectives$$anonfun$handleExceptions$1$$anonfun$apply$4.apply(ExecutionDirectives.scala:33)
+my-project 	at spray.routing.HttpServiceBase$class.runSealedRoute$1(HttpService.scala:36)
+my-project 	at spray.routing.HttpServiceBase$$anonfun$runRoute$1.applyOrElse(HttpService.scala:46)
+my-project 	at akka.actor.Actor$class.aroundReceive(Actor.scala:465)
+my-project 	at com.app.modules.AppService.aroundReceive(AppService.scala:12)
+my-project 	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:516)
+my-project 	at akka.actor.ActorCell.invoke(ActorCell.scala:487)
+my-project 	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:254)
+my-project 	at akka.dispatch.Mailbox.run(Mailbox.scala:221)
+my-project 	at akka.dispatch.Mailbox.exec(Mailbox.scala:231)
+my-project 	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+my-project 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+my-project 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+my-project 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+my-project 
+reStart
+[info] Compiling 1 Scala source to F:\learnym\training\scala\spray\my-project\target\scala-2.11\classes...
+[info] Stopping application my-project (by killing the forked JVM) ...
+my-project ... finished with exit code 1
+[info] Starting application my-project in the background ...
+my-project Starting com.app.Boot.main()
+[success] Total time: 2 s, completed 13 May, 2017 8:49:05 PM
+> my-project [INFO] [05/13/2017 20:49:14.682] [app-system-akka.actor.default-dispatcher-3] [akka://app-system/user/IO-HTTP/listener-0] Bound to localhost/127.0.0.1:8080
+my-project Called POST cycle
+my-project Saving using org.hibernate.ejb.EntityManagerImpl@4e613684
+my-project Hibernate: insert into Cycle (id, number) values (null, ?)
+my-project Hibernate: call identity()
+my-project Called GET cycle
+my-project Hibernate: select cycle0_.id as id0_, cycle0_.number as number0_ from Cycle cycle0_
+exit
+my-project ... killing ...
