@@ -2,20 +2,20 @@ organization  := "com.example"
 
 version       := "0.1"
 
-scalaVersion  := "2.11.6"
+scalaVersion  := "2.11.11"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 resolvers ++= Seq("Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/")
 
 libraryDependencies ++= {
-  val AkkaVersion       = "2.4.18"
-  val AkkaHttpVersion   = "2.4.11.2"
+  val AkkaVersion       = "2.4.11.2"
+  val AkkaHttpVersion   = "10.0.6"
   Seq(
     "com.typesafe.akka" %% "akka-slf4j"      % AkkaVersion,
-    "com.typesafe.akka" %% "akka-http-experimental" % AkkaHttpVersion,
+    "com.typesafe.akka" %% "akka-http" % AkkaHttpVersion,
     "ch.qos.logback"    %  "logback-classic" % "1.1.2",
-    "com.typesafe.akka" %% "akka-http-spray-json" % "10.0.4"
+    "com.typesafe.akka" %% "akka-http-spray-json" % AkkaHttpVersion
   )
 }
 
@@ -39,7 +39,9 @@ libraryDependencies ++= {
     "org.slf4j" % "slf4j-log4j12" % "1.6.1",
     "log4j" % "log4j" % "1.2.16",
 
-    "hsqldb" % "hsqldb" % "1.8.0.7"
+    "hsqldb" % "hsqldb" % "1.8.0.7",
+    "org.specs2" %% "specs2" % "3.7"
+
   )
 
 }
