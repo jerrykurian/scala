@@ -8,6 +8,6 @@ import com.google.inject.AbstractModule
   */
 class ServiceModule extends AbstractModule{
   override def configure(): Unit = {
-    bind(classOf[NodeService]).to
+    bind(classOf[NodeService])
   }
 }
